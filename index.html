@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaf Ya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PIN SCREEN -->
+  <div id="pin-screen">
+    <h2>Masukkan PIN 💌</h2>
+    <div id="dots">○○○○</div>
+    <div class="keypad">
+      <div class="key" onclick="press(1)">1</div>
+      <div class="key" onclick="press(2)">2</div>
+      <div class="key" onclick="press(3)">3</div>
+      <div class="key" onclick="press(4)">4</div>
+      <div class="key" onclick="press(5)">5</div>
+      <div class="key" onclick="press(6)">6</div>
+      <div class="key" onclick="press(7)">7</div>
+      <div class="key" onclick="press(8)">8</div>
+      <div class="key" onclick="press(9)">9</div>
+      <div></div>
+      <div class="key" onclick="press(0)">0</div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- PAGE 1 -->
+  <div id="page1" class="page">
+    <div class="card">
+      <img src="foto.jpg" alt="foto" class="photo" onerror="this.style.display='none'">
+      <div class="hearts">🤍 🍓 🤍</div>
+      <h1>Hey..</h1>
+      <p>
+        I'm serious about apologizing to you this time.<br>
+        Mungkin kamu bosen baca kata maaf, but please..<br>
+        aku sadar bercanda aku kelewatan tadi, aku mau berubah.<br>
+        Aku bakal mikir 2x lagi kedepannya.<br>
+        <span class="highlight">Maaf sayang, i really mean it.</span>
+      </p>
+      <button class="btn" onclick="nextPage(2)">Lanjut →</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" class="page">
+    <div class="card">
+      <div class="hearts">♥️ 🐑 ♥️</div>
+      <p>
+        I may not be perfect to treat you,<br>
+        but i'll changes my bad habits<br>
+        just to keep you in my life<br>
+        for as long as i can.
+      </p>
+      <button class="btn" onclick="nextPage(3)">Lanjut →</button>
+    </div>
+  </div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+  <div class="card">
+    <a href="https://t.me/+894vJjSCO683YjU1" target="_blank" class="heart-link">
+      <div class="final-heart">♥️</div>
+    </a>
+    <p class="final-text">
+      Permintaan maafku bener-bener tulus.<br>
+      Tolong terima maafku ya dut? promise to you ini kali terakhir aku minta maaf karna sikap jelekku.
+      
+    </p>
+    <p class="music-note">(lagu lagi diputar buat kamu)</p>
+    <p style="font-size: 0.95rem; color: #888; margin-top: 10px;">
+      Tiptal lovenya.
+    </p>
+  </div>
+</div>
